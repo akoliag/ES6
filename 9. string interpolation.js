@@ -1,7 +1,9 @@
 for(let number = 1; number < 5; number++) {
 
     let button = document.createElement("button");
-    let size = (number * 100) + "%";
+    //string template literal:
+    let size = `${number * 100}%`;
+    //let size = (number * 100) + "%";
     let button = `# ${number} - ${size}`;
     button.innerText = buttonText;
     document.body.appendChild(button);
